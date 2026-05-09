@@ -12,6 +12,7 @@ import Home from './pages/Home';
 import OnlineOrder from './pages/OnlineOrder';
 import CateringBooking from './pages/CateringBooking';
 import MagilVirundhu from './pages/MagilVirundhu';
+import BrandCardBanner from './components/BrandCardBanner';
 import Footer from './components/Footer';
 
 function AppContent({ 
@@ -40,6 +41,7 @@ function AppContent({
         </Routes>
       </main>
 
+      <BrandCardBanner />
       <Footer />
 
       <Cart 
