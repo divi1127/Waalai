@@ -217,9 +217,9 @@ const Home = () => {
             </div>
 
             {/* Right Column (Featured Image) */}
-            <div className="hero-image-box slide-img-in" style={{ position: 'relative', display: 'flex', justifyContent: 'center', width: '100%', maxWidth: '500px', height: '420px' }}>
+            <div className="hero-image-box slide-img-in" style={{ position: 'relative', display: 'flex', justifyContent: 'center', width: '100%', maxWidth: '500px', height: '450px', overflow: 'hidden' }}>
               {/* Decorative Floating Frame */}
-              <div style={{
+              <div className="hero-frame" style={{
                 position: 'absolute', top: '20px', right: '-20px', bottom: '-20px', left: '20px',
                 border: '2px solid var(--color-gold-accent)', borderRadius: '32px', zIndex: 0
               }}></div>
@@ -228,11 +228,12 @@ const Home = () => {
                 alt="Waalai Special Dish" 
                 style={{ 
                   width: '100%', 
-                  height: '420px', // Standardized height
+                  height: '450px', // Standardized height
                   borderRadius: '24px', 
                   position: 'relative', 
                   zIndex: 1, 
                   objectFit: 'cover', 
+                  objectPosition: 'center top',
                   boxShadow: '0 20px 50px rgba(0,0,0,0.3)',
                   border: '4px solid white',
                   transition: 'all 0.5s ease'
